@@ -1,5 +1,5 @@
 # aa_quota
-Tool to scrape my remaining aaisp.net bandwidth quota from their homepage.
+Tool to scrape my remaining http://aaisp.net.uk bandwidth quota from their homepage.
 
 My kids are addicted to YouTube.  My better half is addicted to iPlayer.
 I'm a bit partial to Netflix.
