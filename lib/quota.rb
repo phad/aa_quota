@@ -55,8 +55,8 @@ result = {
   :message => message,
   :percent_time_elapsed => percent_time_elapsed,
   :percent_quota_used => percent_quota_used,
-  :bytes_used => used_bytes,
-  :bytes_remain => bytes_remain
+  :bytes_used => used_bytes.to_i,
+  :bytes_remain => bytes_remain.to_i
 }
 
 puts JSON.generate(result)

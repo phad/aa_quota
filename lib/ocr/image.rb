@@ -9,13 +9,6 @@ module Ocr
     attr :max
     attr :data
 
-    def initialize
-      @width = 0
-      @height = 0
-      @max = 0
-      @data = []
-    end
-
     def initialize(width = 0, height = 0, max = 0, data = [])
       @width = width
       @height = height
