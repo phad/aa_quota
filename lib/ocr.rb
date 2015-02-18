@@ -4,8 +4,8 @@ require './lib/ocr/tight_crop'
 
 KNOWN_CHARS = {
   'OGYzOGU5N2FlZGFhYzZmMzY2OTU1NzM5NGQwNWNlYWQxNGFmOTgwYQ==' => '0',
-  'unknown1' => '1',
-  'unknown2' => '2',
+  'ZDg0YjJkN2I2N2Q4ZWU3NzRiZDhiNjdmYjI2YWExOGIzYjJlMmUwNQ==' => '1',
+  'NWQ1MjFjMTUyNWJjZDhlYjU3MzMyYzMxNWFiYjM3N2ZmYWYxZWZhZg==' => '2',
   'MDkwODNjNjQ1NTFmMjBkZWY1NzQzMTNmNzVkYmM3NmIyNmZiZTVlMA==' => '3',
   'NDFkNTg4NzBkMzM2YWVkOTA2NzMxMzM5YWFhNDU1ZjhmZjQyZGFjMw==' => '4',
   'unknown5' => '5',
