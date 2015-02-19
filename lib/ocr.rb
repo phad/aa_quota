@@ -12,7 +12,7 @@ KNOWN_CHARS = {
   'ZGIxOGVlOWI0MWY0NzFlNDQ3YWQyMDI2OGIzNmFjN2IxNGI2OGI1OQ==' => '6',
   'unknown7' => '7',
   'unknown8' => '8',
-  'unknown9' => '9',
+  'OTYxYjg1ZjVmZTFhYTVlOTUxM2VmNDRhOTg3NTBkNGJkNjNiYjNlNg==' => '9',
   'MDI1YmZmYzg2YzY1ZTc3ODRiOTMwMGY4NGY1ZDc0Mjg5YTI2NDE0Zg==' => '.',
   'MmMzYWVlNTgxZTk3MGM4Y2NmZWU4MTJjY2Q5OGM5ODcxZDE2MzdkYQ==' => 'G',
   'NjI2YzEwZDRjYTg4MmJkOWZkZDhlZDU0MjRlYjkyNzU5MWMyZjliYw==' => 'B'
