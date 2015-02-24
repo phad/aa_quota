@@ -6,7 +6,7 @@ CONVERT=/usr/bin/convert
 CURL=/usr/bin/curl
 BLINK1=/usr/bin/blink1-tool
 JQ=/usr/bin/jq
-
+SED=/bin/sed
 
 TMPDIR=`mktemp -d`
 pushd $TMPDIR > /dev/null
@@ -21,7 +21,7 @@ QUOTA_REMAIN=`$RUBY ./lib/ocr.rb $TMPDIR/quota.pgm`
 
 QUOTA_JSON=`$RUBY ./lib/quota.rb $QUOTA_REMAIN`
 
-BLINK1_COLOR=`echo $QUOTA_JSON | $JQ .blink1_rgb`
+BLINK1_COLOR=`echo $QUOTA_JSON | $JQ .blink1_rgb | $SED 's/\"//g'`
 
 $BLINK1 --rgb=$BLINK1_COLOR
 
