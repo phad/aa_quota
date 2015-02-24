@@ -39,12 +39,16 @@ percent_quota_used = 100.0 * used_bytes / QUOTA_BYTES
 projected_time_quota_expires = now + (bytes_remain / used_bytes) * secs_elapsed
 
 status_color = ''
-if percent_quota_used < percent_time_elapsed
+blink1_rgb = ''
+if percent_quota_used < 0.90 * percent_time_elapsed
   status_color = 'GREEN'
+  blink1_rgb = '0,224,0'
 elsif percent_quota_used < 1.1 * percent_time_elapsed
   status_color = 'YELLOW'
+  blink1_rgb = '192,112,0'
 else 
   status_color = 'RED'
+  blink1_rgb = '240,0,0'
 end
 
 message = "#{status_color}: quota up at #{Time.at(projected_time_quota_expires)} (#{quota_remain_string} remain)"
@@ -52,6 +56,7 @@ message = "#{status_color}: quota up at #{Time.at(projected_time_quota_expires)}
 result = {
   :timestamp => now,
   :status => status_color,
+  :blink1_rgb => blink1_rgb,
   :message => message,
   :percent_time_elapsed => percent_time_elapsed,
   :percent_quota_used => percent_quota_used,
