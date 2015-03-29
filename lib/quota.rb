@@ -40,10 +40,10 @@ projected_time_quota_expires = now + (bytes_remain / used_bytes) * secs_elapsed
 
 status_color = ''
 blink1_rgb = ''
-if percent_quota_used < 0.90 * percent_time_elapsed
+if percent_quota_used < 0.95 * percent_time_elapsed
   status_color = 'GREEN'
   blink1_rgb = '0,224,0'
-elsif percent_quota_used < 1.1 * percent_time_elapsed
+elsif percent_quota_used < 1.05 * percent_time_elapsed
   status_color = 'YELLOW'
   blink1_rgb = '192,112,0'
 else 

@@ -3,6 +3,7 @@ require './lib/ocr/split'
 require './lib/ocr/tight_crop'
 
 KNOWN_CHARS = {
+  # Green background
   'OGYzOGU5N2FlZGFhYzZmMzY2OTU1NzM5NGQwNWNlYWQxNGFmOTgwYQ==' => '0',
   'ZDg0YjJkN2I2N2Q4ZWU3NzRiZDhiNjdmYjI2YWExOGIzYjJlMmUwNQ==' => '1',
   'NWQ1MjFjMTUyNWJjZDhlYjU3MzMyYzMxNWFiYjM3N2ZmYWYxZWZhZg==' => '2',
@@ -15,7 +16,14 @@ KNOWN_CHARS = {
   'OTYxYjg1ZjVmZTFhYTVlOTUxM2VmNDRhOTg3NTBkNGJkNjNiYjNlNg==' => '9',
   'MDI1YmZmYzg2YzY1ZTc3ODRiOTMwMGY4NGY1ZDc0Mjg5YTI2NDE0Zg==' => '.',
   'MmMzYWVlNTgxZTk3MGM4Y2NmZWU4MTJjY2Q5OGM5ODcxZDE2MzdkYQ==' => 'G',
-  'NjI2YzEwZDRjYTg4MmJkOWZkZDhlZDU0MjRlYjkyNzU5MWMyZjliYw==' => 'B'
+  'NjI2YzEwZDRjYTg4MmJkOWZkZDhlZDU0MjRlYjkyNzU5MWMyZjliYw==' => 'B',
+  # Orange background
+  'YTM2OTBhOTI3YzUzNmMwNzRlZmZjMWEyMjE2MDhjNWI2YmEwOGM5ZQ==' => '0',
+  'Y2E0NjYwZDljNjhlMTU0MjM4ZDYyMWI1NDc0ZTM1ZTZmYmFiYjcwNA==' => '1',
+  'NjdhMTU1YTc3OGNmMTE1YWYxZDZkODFkMWVhOWU5YzZlZmE0OGYzOA==' => '4',
+  'ZTI0ZDVhM2M5NjFiZWJiNjYyODBkOTMyNjQ4YzI0Yjg1ZmM4NDc0Ng==' => '5',
+  'NzY4MWM0YjI4YzA4MjljZDNiMTkxYzBkZjdiMDEzMDY0Nzg4NzJhZA==' => '9',  
+  'ODQ2ZDMzODdlMjUwOTRmNGVjYmJhNDZhMzQ4NDg3ODM2MGUwMWFiNQ==' => 'M'
 }
 
 i = Ocr::Image.new
